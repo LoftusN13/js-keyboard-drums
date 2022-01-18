@@ -11,39 +11,39 @@
     <div class="hero-img">
         <div class="keys">
             <div data-key="65" class="key">
-                <kbd>A</kbd>
+                <kbd>A</kbd><br>
                 <span class="sound">clap</span>
             </div>
             <div data-key="83" class="key">
-                <kbd>S</kbd>
+                <kbd>S</kbd><br>
                 <span class="sound">hihat</span>
             </div>
             <div data-key="68" class="key">
-                <kbd>D</kbd>
+                <kbd>D</kbd><br>
                 <span class="sound">kick</span>
             </div>
             <div data-key="70" class="key">
-                <kbd>F</kbd>
+                <kbd>F</kbd><br>
                 <span class="sound">openhat</span>
             </div>
             <div data-key="71" class="key">
-                <kbd>G</kbd>
+                <kbd>G</kbd><br>
                 <span class="sound">boom</span>
             </div>
             <div data-key="72" class="key">
-                <kbd>H</kbd>
+                <kbd>H</kbd><br>
                 <span class="sound">ride</span>
             </div>
             <div data-key="74" class="key">
-                <kbd>J</kbd>
+                <kbd>J</kbd><br>
                 <span class="sound">snare</span>
             </div>
             <div data-key="75" class="key">
-                <kbd>K</kbd>
+                <kbd>K</kbd><br>
                 <span class="sound">tom</span>
             </div>
             <div data-key="76" class="key">
-                <kbd>L</kbd>
+                <kbd>L</kbd><br>
                 <span class="sound">tink</span>
             </div>
         </div>
@@ -58,6 +58,12 @@
         <audio data-key="75" src="/assets/sounds/tom.wav"></audio>
         <audio data-key="76" src="/assets/sounds/tink.wav"></audio>
     </div>
+
+<script>
+    window.addEventListener('keydown', function(e) {
+        console.log(e.keyCode);
+    });
+</script>
 
 </body>
 </html>

@@ -17,18 +17,17 @@ body, html {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .key {
     border: .2rem solid #fff;
     border-radius: .5rem;
-    margin: 1rem;
-    font-size: 1.2rem;
+    margin: .2rem;
+    font-size: 3vw;
     text-transform: uppercase;
     padding: 1rem .5rem;
     transition: all .07s ease;
-    width: 10rem;
     text-align: center;
     color: white;
 }
@@ -37,4 +36,23 @@ body, html {
     transform: scale(1.1);
     border-color: #ffc600;
     box-shadow: 0 0 1rem #ffc600;
-  }
+}
+
+kbd {
+    background-color: transparent;
+    font-size: 4vw;
+}
+
+.row {
+    padding-right: 1rem;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 576px) {
+    .key {
+        font-size: 1vw;
+    }
+    kbd {
+        font-size: 2vw;
+    }
+}
